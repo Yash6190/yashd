@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes typewriter {
+            from {width: 0;}
+            to {width: 100%;}
+        }
+
+        h3 {
+            color: whitesmoke;
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation:
+                typewriter 4s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to {border-color: transparent}
+            50% {border-color: white;}
+        }
+
+    
+
+        /* bootstrap*/
+        .img-box img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function generateParagraph() {
+        
+          var paragraphs = ["Believe in yourself. Not in the you who believes in me. Not the me who believes in you. Believe in the you who believes in yourself.Tengen Toppa Gurren Lagann", "The world is cruel but also very beautiful ,Attack on Titan", "If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be ,Naruto"];
+        
+         
+          var randomIndex = Math.floor(Math.random() * paragraphs.length);
+          var randomParagraph = paragraphs[randomIndex];
+        
+         
+          var paragraphElement = document.getElementById("myParagraph");
+        
+      
+          paragraphElement.textContent = randomParagraph;
+        }
+        
+       
+        window.onload = generateParagraph;
+        </script>
+
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="../video/0401(2).mp4" type="video/mp4">
+    </video>
+
+    <nav>
+        <ul>
+            <li><a href="../main.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <div class="content container d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-center mb-4">ANIME</h1>
+        <a href="https://www.quotev.com/quiz/15313370/Guess-The-Anime-Character" class="mb-3">Quiz</a>
+       
+        <h4 class="text-center mb-4" style="color: aliceblue;">This page shows the popular anime character of all time.</h4>
+            <br>
+    <h3 class="text-center mb-4" style="color: white; text-align: center;">Quote Of the Day!</h3>  
+    <p class="text-center mb-4" id="myParagraph" style="color: white; font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
+          
+    </div>
+
+    <div class="container">
+      <div class="gallery row d-flex flex-wrap justify-content-center">  
+        <div class="img-box col-lg-3 col-md-4 col-sm-6">  
+        
+          <a href="https://en.wikipedia.org/wiki/Ash_Ketchum"><h3>Ash Ketchum.</h3></a><!--Ash-->
+          </div>
+          <div class="img-box col-lg-3 col-md-4 col-sm-6">
+              <a href="https://en.wikipedia.org/wiki/Goku">
+                  <h3>Goku.</h3> </a><!--GOKU-->
+          </div>
+          <div class="img-box col-lg-3 col-md-4 col-sm-6">
+              <a href="https://en.wikipedia.org/wiki/Roronoa_Zoro">
+                  <h3>RORONOA ZORO.</h3> </a><!--ZORO-->
+          </div>
+          <div class="img-box col-lg-3 col-md-4 col-sm-6">
+              <a href="https://en.wikipedia.org/wiki/Monkey_D._Luffy"><h3>LUFFY.</h3></a><!--LUFFy-->
+                 
+          </div>
+       
+        <div class="img-box col-lg-3 col-md-4 col-sm-6">
+            <a href="https://en.wikipedia.org/wiki/Ichigo_Kurosaki"><h3>Ichigo</h3></a><!--BLEACH-->
+               
+        </div>
+        
+        <div class="img-box col-lg-3 col-md-4 col-sm-6">
+            <a href="https://en.wikipedia.org/wiki/Naruto_Uzumaki"><h3>NARUTO</h3></a>
+               
+        </div>
+         
+        <div class="img-box col-lg-3 col-md-4 col-sm-6">
+            <a href="https://en.wikipedia.org/wiki/Satoru_Gojo"><h3>Satoru_Gojo</h3></a>
+               
+        </div>
+
+        <div class="img-box col-lg-3 col-md-4 col-sm-6">
+            <a href="https://en.wikipedia.org/wiki/Yuji_Itadori"><h3>Yuji Itadori.</h3></a>
+               
+        </div>
+      </div>
+
+  </div>
+
+</body>
+</html>
+
